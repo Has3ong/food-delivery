@@ -1,7 +1,15 @@
 
-
+## 클라우드 아키텍처 구성, MSA 아키텍처 구성도
+## 도메인 분석 - 이벤트 스토밍
+## 분산트랜잭션 - Saga
+## 보상처리 - Compensation
+## 단일진입점 - Gateway
+## 분산 데이터 프로젝션 - CQRS
 
 ## 컨테이너 자동확장 - HPA
+
+- 참조 : 마이크로서비스 확장과 오토 스케일아웃
+- URL : https://www.msaez.io/#/courses/cna-full/093c4d10-b34b-11ee-94ee-83b5b47c8792/ops-autoscale
 
 ```shell
 # 테스트용 pod 생성
@@ -77,6 +85,23 @@ spec:
 $ kubectl delete -f order-deploy.yaml
 $ kubectl apply -f order-deploy.yaml
 ```
+
+
+## 컨테이너로부터 환경분리 - ConfigMap/Secret
+- 참조 : PDF 392 PAGE
+
+## 클라우드스토리지 활용 - PVC
+- 참조 : PDF 378 PAGE
+
+## 셀프힐링/무정지배포 - Liveness/Rediness Probe
+- 참조 : 마이크로서비스 확장과 오토 스케일아웃
+- URL : https://www.msaez.io/#/courses/cna-full/093c4d10-b34b-11ee-94ee-83b5b47c8792/ops-autoscale
+## 서비스 메쉬 응용 - Mesh
+- 참조 : 마이크로서비스 확장과 오토 스케일아웃
+- URL : https://www.msaez.io/#/courses/cna-full/093c4d10-b34b-11ee-94ee-83b5b47c8792/ops-autoscale
+## 통합 모너티렁 - Loggregation/Monitoring
+- 참조 : 마이크로서비스 확장과 오토 스케일아웃
+- URL : https://www.msaez.io/#/courses/cna-full/093c4d10-b34b-11ee-94ee-83b5b47c8792/ops-autoscale
 
 ## 공통(부하테스트)
 
